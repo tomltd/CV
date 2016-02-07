@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 
 // variables
+
 $body: #18170D;
 $white: #FFFFFF;
 $right: #B4B4B4;
@@ -10,6 +11,7 @@ $darkest: #000;
 $neon: #429786;
 
 // layout
+
 body {
   background: $body;
   font-family: 'Lato', sans-serif;
@@ -85,16 +87,28 @@ a {
       }
     }
 
+// medium and up
+
 @media all and (min-width: 768px) {
   main {
    flex: 1 0;
    order: 1;
-}
+  }
   aside {
     order: 2;
     width: 30%;
+  }
 }
+
+// removes black border on ipad
+
+@media all and (max-width: 771px) {
+  body .wrapper {
+    margin: 0 !important;
+  }
 }
+
+// mobile
 
 @media all and (max-width: 767px) {
   main,

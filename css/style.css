@@ -74,6 +74,10 @@ aside {
     order: 2;
     width: 30%; } }
 
+@media all and (max-width: 771px) {
+  body .wrapper {
+    margin: 0 !important; } }
+
 @media all and (max-width: 767px) {
   main,
   aside {
