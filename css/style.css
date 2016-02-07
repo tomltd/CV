@@ -13,7 +13,7 @@ body {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin: 1em auto;
-    height: 1122px;
+    min-height: 1024;
     width: 768px;
     background: #FFFFFF; }
 
@@ -74,10 +74,10 @@ aside {
     -webkit-flex: 1 auto;
     -ms-flex: 1 auto;
     flex: 1 auto;
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1; }
-  main {
     -webkit-order: 2;
     -ms-flex-order: 2;
-    order: 2; } }
+    order: 2; }
+  main {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; } }
