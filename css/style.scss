@@ -1,12 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 
-$theBody: black;
+// variables
+$body: #18170D;
 $white: #FFFFFF;
 $right: #B4B4B4;
 $info: darkblue;
 
+// layout
 body {
-  background: $theBody;
+  background: $body;
   font-family: 'Lato', sans-serif;
   * + * {
   margin-top: 30px;
@@ -17,7 +19,7 @@ body {
   flex-flow: row wrap;
   margin: 1em auto;
 	height:1122px; // A4
-  width:794px; // A4
+  width:768px; // A4
 	background: $white;
   }
 }
@@ -66,7 +68,7 @@ h1, h2, h3 {
       }
     }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 768px) {
   main {
    flex: 1 0;
    order: 1;
@@ -77,7 +79,7 @@ h1, h2, h3 {
 }
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 767px) {
   main,
   aside {
   flex: 1 100%;
