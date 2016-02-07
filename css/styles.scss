@@ -1,14 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 
-// variables
-$body: #18170D;
+$theBody: black;
 $white: #FFFFFF;
 $right: #B4B4B4;
 $info: darkblue;
 
-// layout
 body {
-  background: $body;
+  background: $theBody;
   font-family: 'Lato', sans-serif;
   * + * {
   margin-top: 30px;
@@ -24,7 +22,6 @@ body {
   }
 }
 
-// styles
 
 h1, h2, h3 {
   font-weight: 300;
