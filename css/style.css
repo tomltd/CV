@@ -6,6 +6,8 @@ body {
     margin-top: 30px;
     margin-top: 1.5rem; }
   body .wrapper {
+    background: #FFFFFF;
+    box-sizing: border-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -14,8 +16,7 @@ body {
     flex-flow: row wrap;
     margin: 1em auto;
     min-height: 1024;
-    width: 768px;
-    background: #FFFFFF; }
+    width: 768px; }
 
 h1, h2, h3 {
   font-weight: 300;
