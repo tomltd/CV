@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+// variables
+$body: #18170D;
+$white: #FFFFFF;
+$right: #B4B4B4;
+$info: darkblue;
+
+// layout
+body {
+  background: $body;
+  font-family: 'Lato', sans-serif;
+  * + * {
+  margin-top: 30px;
+  margin-top: 1.5rem;
+  }
+  .wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1em auto;
+	height:1122px; // A4
+  width:794px; // A4
+	background: $white;
+  }
+}
+
+// styles
+
+h1, h2, h3 {
+  font-weight: 300;
+  margin-left: 1em;
+}
+
+.wrapper {
+      header {
+        h2 {
+          line-height: .1em;
+        }
+        img {
+          border-radius: 50%;
+          margin: 0.6em 2em 1em 2em;
+          float: left;
+        }
+      }
+      section {
+        clear:both;
+        margin-top: 4em;
+        h3 {
+          margin: 0 0 0 1em;
+        }
+        p {
+          line-height: 1.5em;
+          margin: 0 1em 0 4em;
+        }
+      }
+    }
+    aside {
+      background: $right;
+      margin-top: 0;
+      h2 {
+        color: $info;
+        font-size: 1.2em;
+        margin-top: 3em;
+        text-transform: uppercase;
+      }
+      p {
+        margin-left: 1em;
+        line-height: .2em;
+      }
+    }
+
+@media all and (min-width: 900px) {
+  main {
+   flex: 1 0;
+   order: 1;
+}
+  aside {
+    order: 2;
+    width: 30%;
+}
+}
+
+@media all and (max-width: 900px) {
+  main,
+  aside {
+  flex: 1 100%;
+  }
+  aside {
+    flex: 1 auto;
+    order: 1;
+  }
+	main {
+    order: 2;
+  }
+}
