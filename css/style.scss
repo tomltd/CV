@@ -54,10 +54,45 @@ a {
         h2 {
           line-height: .1em;
         }
+        #top-image {
+          position: relative;
+          margin: 0.6em 2em 1em 2em;
+        }
         img {
           border-radius: 50%;
-          margin: 0.6em 2em 1em 2em;
-          float: left;
+          height: 100px;
+          width: 100px;
+          position: absolute;
+          left: 0;
+          transition: opacity 1s ease-in-out;
+        }
+        .top {
+          margin: 0;
+        }
+        @keyframes topImageFadeInOut {
+          0% {
+            opacity:1;
+          }
+          45% {
+          opacity:1;
+          }
+          55% {
+          opacity:0;
+          }
+          100% {
+          opacity:0;
+          }
+        }
+          #top-image img.top {
+          animation-name: topImageFadeInOut;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          animation-duration: 10s;
+          animation-direction: alternate;
+        }
+        .headings {
+          position: relative;
+          left: 120px;
         }
       }
       section {

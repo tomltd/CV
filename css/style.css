@@ -34,10 +34,56 @@ a {
 .wrapper header h2 {
   line-height: .1em; }
 
+.wrapper header #top-image {
+  position: relative;
+  margin: 0.6em 2em 1em 2em; }
+
 .wrapper header img {
   border-radius: 50%;
-  margin: 0.6em 2em 1em 2em;
-  float: left; }
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  transition: opacity 1s ease-in-out; }
+
+.wrapper header .top {
+  margin: 0; }
+
+@-webkit-keyframes topImageFadeInOut {
+  0% {
+    opacity: 1; }
+  45% {
+    opacity: 1; }
+  55% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes topImageFadeInOut {
+  0% {
+    opacity: 1; }
+  45% {
+    opacity: 1; }
+  55% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.wrapper header #top-image img.top {
+  -webkit-animation-name: topImageFadeInOut;
+  animation-name: topImageFadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate; }
+
+.wrapper header .headings {
+  position: relative;
+  left: 120px; }
 
 .wrapper section {
   clear: both;
