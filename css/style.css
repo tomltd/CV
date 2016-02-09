@@ -144,3 +144,9 @@ aside {
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1; } }
+
+@media all and (max-width: 500px) {
+  html {
+    font-size: 14px; }
+  .wrapper {
+    width: 500px; } }
