@@ -91,21 +91,28 @@ a {
 .wrapper section {
   clear: both;
   margin-top: 3rem; }
+  .wrapper section h3.title {
+    margin-top: 1rem; }
   .wrapper section h3 {
     margin: 0 0 0 1rem; }
   .wrapper section p {
     line-height: 1.5em;
     margin: 0 1em 0 4em; }
 
-aside {
+.wrapper ul {
+  margin: 0 0 0 4em; }
+  .wrapper ul li {
+    margin: 0; }
+
+.wrapper aside {
   background: #B4B4B4;
   margin-top: 0; }
-  aside h2 {
+  .wrapper aside h2 {
     color: darkblue;
     font-size: 1.2rem;
     margin-top: 3em;
     text-transform: uppercase; }
-  aside p {
+  .wrapper aside p {
     margin-left: 1em;
     line-height: .2em; }
 
