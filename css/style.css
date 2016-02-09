@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+html {
+  font-size: 16px; }
+
 body {
   background: #18170D;
   font-family: 'Lato', sans-serif;
@@ -20,7 +23,7 @@ body {
     width: 768px; }
 
 h1, h2, h3 {
-  margin-left: 1em; }
+  margin-left: 1rem; }
 
 a {
   text-decoration: none;
@@ -83,13 +86,13 @@ a {
 
 .wrapper header .headings {
   position: relative;
-  left: 120px; }
+  left: 140px; }
 
 .wrapper section {
   clear: both;
-  margin-top: 4em; }
+  margin-top: 3rem; }
   .wrapper section h3 {
-    margin: 0 0 0 1em; }
+    margin: 0 0 0 1rem; }
   .wrapper section p {
     line-height: 1.5em;
     margin: 0 1em 0 4em; }
@@ -99,7 +102,7 @@ aside {
   margin-top: 0; }
   aside h2 {
     color: darkblue;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-top: 3em;
     text-transform: uppercase; }
   aside p {

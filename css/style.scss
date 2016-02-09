@@ -12,6 +12,10 @@ $neon: #429786;
 
 // layout
 
+html {
+  font-size: 16px;
+}
+
 body {
   background: $body;
   font-family: 'Lato', sans-serif;
@@ -34,7 +38,7 @@ body {
 // styles
 
 h1, h2, h3 {
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 
 a {
@@ -92,14 +96,14 @@ a {
         }
         .headings {
           position: relative;
-          left: 120px;
+          left: 140px;
         }
       }
       section {
         clear:both;
-        margin-top: 3em;
+        margin-top: 3rem;
         h3 {
-          margin: 0 0 0 1em;
+          margin: 0 0 0 1rem;
         }
         p {
           line-height: 1.5em;
@@ -112,7 +116,7 @@ a {
       margin-top: 0;
       h2 {
         color: $info;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         margin-top: 3em;
         text-transform: uppercase;
       }
