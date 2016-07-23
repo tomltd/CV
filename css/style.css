@@ -22,7 +22,9 @@ body {
     min-height: 1024px;
     width: 768px; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-left: 1rem; }
 
 a {
