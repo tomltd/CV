@@ -35,7 +35,7 @@ body {
   }
 }
 
-// styles
+// Styles
 
 h1,
 h2,
@@ -55,88 +55,93 @@ a {
   color: $lighter;
 }
 
-.wrapper {
-  header {
-    h2 {
-      line-height: .1em;
-    }
-    #top-image {
-      position: relative;
-      margin: 0.6em 2em 1em 2em;
-    }
-    img {
-      border-radius: 50%;
-      height: 100px;
-      width: 100px;
-      position: absolute;
-      left: 0;
-      transition: opacity 1s ease-in-out;
-    }
-    .top {
-      margin: 0;
-    }
-    @keyframes topImageFadeInOut {
-      0% {
-        opacity:1;
-      }
-      45% {
-      opacity:1;
-      }
-      55% {
-      opacity:0;
-      }
-      100% {
-      opacity:0;
-      }
-    }
-    #top-image img.top {
-    animation-name: topImageFadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 7s;
-    animation-direction: alternate;
-  }
-    .headings {
-      position: relative;
-      left: 140px;
-    }
-  }
-  section {
-    clear:both;
-    margin-top: 2rem;
-    h3.title {
-      margin-top: 1rem;
-    }
-    h3 {
-      margin: 0 0 0 1rem;
-    }
-    p {
-      line-height: 1.5em;
-      margin: 0 1em 0 4em;
-      }
-    }
-    ul {
-      margin: 0 0 0 4em;
-      li {
-        margin: 0;
-      }
-    }
-  aside {
-    background: $right;
-    margin-top: 0;
-    h2 {
-      color: $info;
-      font-size: 1.2rem;
-      margin-top: 3em;
-      text-transform: uppercase;
-    }
-    p {
-      margin-left: 1em;
-      line-height: .2em;
-    }
+ul {
+  margin: 0 0 0 4em;
+  li {
+    margin: 0;
   }
 }
-// medium and up
+
+// Header.
+header {
+  h2 {
+    line-height: .1em;
+  }
+  #top-image {
+    position: relative;
+    margin: 0.6em 2em 1em 2em;
+  }
+  img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  .top {
+    margin: 0;
+  }
+  @keyframes topImageFadeInOut {
+    0% {
+      opacity:1;
+    }
+    45% {
+    opacity:1;
+    }
+    55% {
+    opacity:0;
+    }
+    100% {
+    opacity:0;
+    }
+  }
+  #top-image img.top {
+  animation-name: topImageFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-direction: alternate;
+}
+  .headings {
+    position: relative;
+    left: 140px;
+  }
+}
+// End of Header.
+section {
+  clear:both;
+  margin-top: 1rem;
+  h3.title {
+    margin-top: 1rem;
+  }
+  h3 {
+    margin: 0 0 0 1rem;
+  }
+  p {
+    line-height: 1.5em;
+    margin: 0 1em 0 4em;
+  }
+}
+// End of Section.
+aside {
+  background: $right;
+  margin-top: 0;
+  h2 {
+    color: $info;
+    font-size: 1.2rem;
+    margin-top: 3em;
+    text-transform: uppercase;
+  }
+  p {
+    margin-left: 1em;
+    line-height: .2em;
+  }
+}
+// End of Aside.
+
+// Media Queries.
+// Medium and up.
 
 @media all and (min-width: 768px) {
   main {
