@@ -1,5 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 
+// reset
+
+
+* , *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
 // variables
 
 $body: #18170D;
