@@ -3,18 +3,18 @@
 // reset
 
 * , *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
 // variables
 
 $body: #636363;
-$white: #FFFFFF;
+$white: #fff;
 $right: #f1f1f1;
-$info: #1A4178;
+$info: #1a4178;
 $lighter: #787878;
 $darkest: #000;
 $neon: #429786;

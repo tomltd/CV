@@ -10,18 +10,19 @@ body {
   background: $body;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+
   * + * {
-  margin-top: 30px;
-  margin-top: 1.5rem;
+    margin-top: 30px;
   }
+
   .wrapper {
-  background: $white;
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: row wrap;
-  margin: 1em auto;
-	min-height: 1024px; // A4
-  width: 768px; // A4
+    background: $white;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em auto;
+    min-height: 1024px; // A4
+    width: 768px; // A4
   }
 }
 
@@ -34,8 +35,9 @@ h3 {
 }
 
 a {
-  text-decoration: none;
   color: $darkest;
+  text-decoration: none;
+
   &:hover {
     color: $neon;
   }
@@ -47,6 +49,7 @@ a {
 
 ul {
   margin: 0 0 0 4em;
+
   li {
     margin: 0;
   }
@@ -57,10 +60,12 @@ header {
   h2 {
     line-height: .1em;
   }
+
   #top-image {
-    position: relative;
     margin: 0.6em 2em 1em 2em;
+    position: relative;
   }
+
   img {
     border-radius: 50%;
     height: 100px;
@@ -77,21 +82,21 @@ header {
       opacity:1;
     }
     45% {
-    opacity:1;
+      opacity:1;
     }
     55% {
-    opacity:0;
+      opacity:0;
     }
     100% {
-    opacity:0;
+      opacity:0;
     }
   }
   #top-image img.top {
-  animation-name: topImageFadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 7s;
-  animation-direction: alternate;
+    animation-name: topImageFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-direction: alternate;
 }
   .headings {
     position: relative;
@@ -157,7 +162,7 @@ aside {
 @media all and (max-width: 767px) {
   main,
   aside {
-  flex: 1 100%;
+    flex: 1 100%;
   }
   aside {
     flex: 1 auto;
