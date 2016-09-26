@@ -1,183 +1,173 @@
 @import 'vars';
-
 // layout
-
 html {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 body {
-  background: $body;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-
-  * + * {
-    margin-top: 30px;
-  }
-
-  .wrapper {
-    background: $white;
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 1em auto;
-    min-height: 1024px; // A4
-    width: 768px; // A4
-  }
+    background: $body;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    * + * {
+        margin-top: 30px;
+    }
+    .wrapper {
+        background: $white;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 1em auto;
+        min-height: 1024px; // A4
+        width: 768px; // A4
+    }
 }
 
 // Styles
-
 h1,
 h2,
 h3 {
-  margin-left: 1rem;
+    margin-left: 1rem;
 }
 
 a {
-  color: $darkest;
-  text-decoration: none;
-
-  &:hover {
-    color: $neon;
-  }
+    color: $darkest;
+    text-decoration: none;
+    &:hover {
+        color: $neon;
+    }
 }
 
 .lighter {
-  color: $lighter;
+    color: $lighter;
 }
 
 ul {
-  margin: 0 0 0 4em;
-
-  li {
-    margin: 0;
-  }
+    margin: 0 0 0 4em;
+    li {
+        margin: 0;
+    }
 }
 
 // Header.
 header {
-  h2 {
-    line-height: .1em;
-  }
-
-  #top-image {
-    margin: 0.6em 2em 1em 2em;
-    position: relative;
-  }
-
-  img {
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    left: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  .top {
-    margin: 0;
-  }
-  @keyframes topImageFadeInOut {
-    0% {
-      opacity:1;
+    h2 {
+        line-height: .1em;
     }
-    45% {
-      opacity:1;
+    #top-image {
+        margin: 0.6em 2em 1em 2em;
+        position: relative;
     }
-    55% {
-      opacity:0;
+    img {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 0;
+        transition: opacity 1s ease-in-out;
     }
-    100% {
-      opacity:0;
+    .top {
+        margin: 0;
     }
-  }
-  #top-image img.top {
-    animation-name: topImageFadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 7s;
-    animation-direction: alternate;
+    @keyframes topImageFadeInOut {
+        0% {
+            opacity: 1;
+        }
+        45% {
+            opacity: 1;
+        }
+        55% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    #top-image img.top {
+        animation-name: topImageFadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 7s;
+        animation-direction: alternate;
+    }
+    .headings {
+        position: relative;
+        left: 140px;
+    }
 }
-  .headings {
-    position: relative;
-    left: 140px;
-  }
-}
+
 // End of Header.
 section {
-  clear:both;
-  margin-top: 1rem;
-  h3.title {
+    clear: both;
     margin-top: 1rem;
-  }
-  h3 {
-    margin: 0 0 0 1rem;
-  }
-  p {
-    line-height: 1.5em;
-    margin: 0 1em 0 4em;
-  }
+    h3.title {
+        margin-top: 1rem;
+    }
+    h3 {
+        margin: 0 0 0 1rem;
+    }
+    p {
+        line-height: 1.5em;
+        margin: 0 1em 0 4em;
+    }
 }
+
 // End of Section.
 aside {
-  background: $right;
-  margin-top: 0;
-  h2 {
-    color: $info;
-    font-size: 1.2rem;
-    margin-top: 3em;
-    text-transform: uppercase;
-  }
-  p {
-    margin-left: 1em;
-    line-height: .2em;
-  }
+    background: $right;
+    margin-top: 0;
+    h2 {
+        color: $info;
+        font-size: 1.2rem;
+        margin-top: 3em;
+        text-transform: uppercase;
+    }
+    p {
+        margin-left: 1em;
+        line-height: .2em;
+    }
 }
-// End of Aside.
 
+// End of Aside.
 // Media Queries.
 // Medium and up.
-
 @media all and (min-width: 768px) {
-  main {
-   flex: 1 0;
-   order: 1;
-  }
-  aside {
-    order: 2;
-    width: 30%;
-  }
+    main {
+        flex: 1 0;
+        order: 1;
+    }
+    aside {
+        order: 2;
+        width: 30%;
+    }
 }
 
 // removes black border on ipad
-
 @media all and (max-width: 771px) {
-  body .wrapper {
-    margin: 0 !important;
-  }
+    body .wrapper {
+        margin: 0 !important;
+    }
 }
 
 // mobile
-
 @media all and (max-width: 767px) {
-  main,
-  aside {
-    flex: 1 100%;
-  }
-  aside {
-    flex: 1 auto;
-    order: 2;
-  }
-	main {
-    order: 1;
-  }
+    main,
+    aside {
+        flex: 1 100%;
+    }
+    aside {
+        flex: 1 auto;
+        order: 2;
+    }
+    main {
+        order: 1;
+    }
 }
 
 @media all and (max-width: 500px) {
-  html {
-    font-size: 12px;
-  }
-  .wrapper {
-    width: 500px;
-  }
+    html {
+        font-size: 12px;
+    }
+    .wrapper {
+        width: 500px;
+    }
 }
