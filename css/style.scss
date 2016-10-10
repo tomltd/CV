@@ -118,7 +118,7 @@ aside {
     h2 {
         color: $info;
         font-size: 1.2rem;
-        margin-top: 3em;
+        margin-top: 2em;
         text-transform: uppercase;
     }
     p {
@@ -171,3 +171,13 @@ aside {
         width: 500px;
     }
 }
+
+// @media print {
+//     .wrapper {
+//         width: 21cm;
+//         height: 29.7cm;
+//     }
+//     aside {
+//         float: right;
+//     }
+// }
