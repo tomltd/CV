@@ -19,6 +19,9 @@ body {
         margin: 1em auto;
         min-height: 1024px; // A4
         width: 768px; // A4
+        -webkit-box-shadow: 0 8px 6px -6px black;
+        -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
     }
 }
 
