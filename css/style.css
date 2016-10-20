@@ -21,10 +21,10 @@ body {
     display: flex;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    margin: 1em auto;
+    margin: 3rem auto;
     min-height: 1024px;
     width: 768px;
-    box-shadow: 0 8px 6px -6px black; }
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
 h1,
 h2,
