@@ -38,7 +38,8 @@ a {
     color: #429786; }
 
 .lighter {
-  color: #787878; }
+  color: #787878;
+  margin: 0.5rem 1rem; }
 
 ul {
   margin: 0 0 0 4em; }
