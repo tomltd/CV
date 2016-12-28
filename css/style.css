@@ -47,7 +47,8 @@ ul {
     margin: 0; }
 
 header h2 {
-  line-height: .1em; }
+  line-height: .5em;
+  margin-bottom: 0.5rem; }
 
 header #top-image {
   margin: 0.6em 2em 1em 2em;
