@@ -65,30 +65,13 @@ header img {
 header .top {
   margin: 0; }
 
-@keyframes topImageFadeInOut {
-  0% {
-    opacity: 1; }
-  45% {
-    opacity: 1; }
-  55% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-header #top-image img.top {
-  animation-name: topImageFadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 7s;
-  animation-direction: alternate; }
-
 header .headings {
   position: relative;
   left: 140px; }
 
 section {
   clear: both;
-  margin-top: 1rem; }
+  margin-top: 2rem; }
   section h3.title {
     margin-top: 1rem; }
   section h3 {
